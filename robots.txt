@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nutritrainrdev.github.io/jc-ar-eletrica/sitemap.xml
