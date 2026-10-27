@@ -22,7 +22,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&display=swap"></noscript>
 <link rel="preload" as="image" href="assets/video/hero-poster.webp" fetchpriority="high">
 <script type="application/ld+json">
 {
@@ -227,7 +228,7 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;background:#fff;borde
 .js h1 .ln>span{transform:translateY(105%);transition:transform .9s var(--ease)}
 .js h1.in .ln>span{transform:none}
 .js h1.in .ln:nth-child(2)>span{transition-delay:.11s}
-.js .stand.rv{transition-delay:.35s}
+.js .stand.rv{transition-delay:.12s}
 
 @media (max-width:900px){
   .nav{display:none}
@@ -513,7 +514,7 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;background:#fff;borde
       el.style.transitionDelay=(Math.max(sib,0)*80)+'ms';
       io.observe(el);
     });
-    d.querySelector('.stand').style.transitionDelay='.45s';
+    d.querySelector('.stand').style.transitionDelay='.12s';
   } else { rv.forEach(function(el){ el.classList.add('in'); }); }
 
   /* mobile WhatsApp bar: appears once the hero has scrolled away; hides where the page already offers the button */
